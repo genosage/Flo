@@ -13,6 +13,7 @@
 		7B5E43B41ED1711C00573A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5E43B21ED1711C00573A32 /* Main.storyboard */; };
 		7B5E43B61ED1711C00573A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5E43B51ED1711C00573A32 /* Assets.xcassets */; };
 		7B5E43B91ED1711C00573A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5E43B71ED1711C00573A32 /* LaunchScreen.storyboard */; };
+		7B5E43C21ED173B700573A32 /* PushButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E43C11ED173B700573A32 /* PushButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7B5E43B51ED1711C00573A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5E43B81ED1711C00573A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5E43BA1ED1711C00573A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B5E43C01ED173B700573A32 /* PushButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButtonView.h; sourceTree = "<group>"; };
+		7B5E43C11ED173B700573A32 /* PushButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		7B5E43A81ED1711C00573A32 /* Flo */ = {
 			isa = PBXGroup;
 			children = (
+				7B5E43C01ED173B700573A32 /* PushButtonView.h */,
+				7B5E43C11ED173B700573A32 /* PushButtonView.m */,
 				7B5E43AC1ED1711C00573A32 /* AppDelegate.h */,
 				7B5E43AD1ED1711C00573A32 /* AppDelegate.m */,
 				7B5E43AF1ED1711C00573A32 /* ViewController.h */,
@@ -153,6 +158,7 @@
 			files = (
 				7B5E43B11ED1711C00573A32 /* ViewController.m in Sources */,
 				7B5E43AE1ED1711C00573A32 /* AppDelegate.m in Sources */,
+				7B5E43C21ED173B700573A32 /* PushButtonView.m in Sources */,
 				7B5E43AB1ED1711C00573A32 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
