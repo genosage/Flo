@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B376F071ED2920600D5CDEC /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B376F061ED2920600D5CDEC /* CounterView.m */; };
 		7B5E43AB1ED1711C00573A32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E43AA1ED1711C00573A32 /* main.m */; };
 		7B5E43AE1ED1711C00573A32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E43AD1ED1711C00573A32 /* AppDelegate.m */; };
 		7B5E43B11ED1711C00573A32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E43B01ED1711C00573A32 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B376F051ED2920600D5CDEC /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterView.h; sourceTree = "<group>"; };
+		7B376F061ED2920600D5CDEC /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
 		7B5E43A61ED1711C00573A32 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5E43AA1ED1711C00573A32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B5E43AC1ED1711C00573A32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 		7B5E43A81ED1711C00573A32 /* Flo */ = {
 			isa = PBXGroup;
 			children = (
+				7B376F051ED2920600D5CDEC /* CounterView.h */,
+				7B376F061ED2920600D5CDEC /* CounterView.m */,
 				7B5E43C01ED173B700573A32 /* PushButtonView.h */,
 				7B5E43C11ED173B700573A32 /* PushButtonView.m */,
 				7B5E43AC1ED1711C00573A32 /* AppDelegate.h */,
@@ -160,6 +165,7 @@
 				7B5E43AE1ED1711C00573A32 /* AppDelegate.m in Sources */,
 				7B5E43C21ED173B700573A32 /* PushButtonView.m in Sources */,
 				7B5E43AB1ED1711C00573A32 /* main.m in Sources */,
+				7B376F071ED2920600D5CDEC /* CounterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +324,7 @@
 				7B5E43BF1ED1711C00573A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

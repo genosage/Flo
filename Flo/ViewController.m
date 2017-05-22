@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Flo
-//
-//  Created by 张添 on 21/5/17.
-//  Copyright © 2017 Tian Zhang. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -16,14 +8,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _counterLabel.text = [NSString stringWithFormat:@"%d", _counterView.counter];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)btnPushButton_click:(PushButtonView *)sender {
+    
+    if (sender.isAddButton) {
+        _counterView.counter++;
+    } else {
+        _counterView.counter--;
+    }
+    
+    _counterLabel.text = [NSString stringWithFormat:@"%d", _counterView.counter];
 }
-
 
 @end

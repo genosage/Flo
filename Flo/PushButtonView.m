@@ -4,41 +4,28 @@
 
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:rect];
-    [[UIColor blueColor] setFill];
+    [_fillColor setFill];
     [path fill];
     
+    CGFloat width = CGRectGetWidth(rect);
+    CGFloat height = CGRectGetHeight(rect);
+    
     CGFloat plusHeight = 3.0;
+    CGFloat plusWidth = MIN(width, height) * 0.6;
+    
+    UIBezierPath *plusPath = [[UIBezierPath alloc] init];
+    plusPath.lineWidth = plusHeight;
+    
+    [plusPath  moveToPoint:CGPointMake(width / 2 - plusWidth / 2 + 0.5, height / 2 + 0.5)];
+    [plusPath addLineToPoint:CGPointMake(width / 2 + plusWidth / 2 + 0.5, height / 2 + 0.5)];
+    
+    if (_isAddButton) {
+        [plusPath moveToPoint:CGPointMake(width / 2 + 0.5, height / 2 - plusWidth / 2 + 0.5)];
+        [plusPath addLineToPoint:CGPointMake(width / 2 + 0.5, height / 2 + plusWidth / 2 + 0.5)];
+    }
+    
+    [[UIColor whiteColor] setStroke];
+    [plusPath stroke];
 }
 
-/*
- 
- //set up the width and height variables
- //for the horizontal stroke
- let plusHeight: CGFloat = 3.0
- let plusWidth: CGFloat = min(bounds.width, bounds.height) * 0.6
- 
- //create the path
- var plusPath = UIBezierPath()
- 
- //set the path's line width to the height of the stroke
- plusPath.lineWidth = plusHeight
- 
- //move the initial point of the path
- //to the start of the horizontal stroke
- plusPath.moveToPoint(CGPoint(
- x:bounds.width/2 - plusWidth/2,
- y:bounds.height/2))
- 
- //add a point to the path at the end of the stroke
- plusPath.addLineToPoint(CGPoint(
- x:bounds.width/2 + plusWidth/2,
- y:bounds.height/2))
- 
- //set the stroke color
- UIColor.whiteColor().setStroke()
- 
- //draw the stroke
- plusPath.stroke()
-
- */
 @end

@@ -1,15 +1,11 @@
-//
-//  ViewController.h
-//  Flo
-//
-//  Created by 张添 on 21/5/17.
-//  Copyright © 2017 Tian Zhang. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "CounterView.h"
+#import "PushButtonView.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet CounterView *counterView;
+@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
 
 @end
 
